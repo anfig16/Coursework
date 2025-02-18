@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Noted: Personal Planner </title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header><h1>&#10023; Noted. &#10023;</h1></header>
+
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="index.html" style="text-decoration:none">Home</a>
+            </li>
+            <li>
+                <a href="events.html" style="text-decoration:none">Events/Notes</a>
+            </li>
+            <li>
+                <a href="about.html" style="text-decoration:none">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <br><br>
+    
+    <div class="calendar-container">
+
+        
+        <div class="notes">
+            <h1>Section for notes</h1> 
+            <div class="notesColumn">
+                <div class="notesSection">
+
+                </div>
+                <form id="notesForm">
+                    <label for="notesInput">Enter note:</label><br>
+                    <input type="text" style="width:70%" id="notesInput"><br>
+                    <input type="submit" id="notesSubmit"><br><br>
+                </form>
+                <label for="EditDeleteNotes">Edit/Delete Notes:</label><br>
+                <button id="EditDeleteNotes">Edit/Delete Notes</button><br><br>
+            </div>
+            ----------------------------
+            <form id="eventForm">
+                <h3>Add events here!</h3>
+
+                <label for="date">Date (MM/DD/YYYY):</label><br>
+                <input type="text" style="width:50%" id="date"><br>
+                
+                <label for="eventInfo">Event title:</label><br>
+                <input type="text" style="width:70%" id="eventInfo"><br>
+
+                <label for="eventDescription">Event Description:</label><br>
+                <textarea id="eventDescription" name="eventDescription" rows="5" cols="20"></textarea><br>
+
+                <input type="submit" id="submit"><br><br>
+
+                <p id="errorMessage"></p>
+
+                <label for="EditDelete">Edit/Delete Events:</label><br>
+                <button id="EditDelete">Edit/Delete Events</button><br><br>
+
+                <label for="clearData">Clear Saved Data:</label><br>
+                <button id="clearData">Clear Saved Data</button><br><br>
+            </form>  
+        </div>
+
+        <div class="calendar-view">
+            <div class="calendar-header">
+                <button type="label" id="Prev">Prev</button>
+                <span id="month-year">Current Month</span>
+                <button type="label" id="Next">Next</button>
+            </div>
+
+            <div class="calendar-weekdays">
+                <div class="row">
+                    <div class="column">
+                    <h1>SUN</h1>
+                    </div>
+                    <div class="column">
+                     <h1>MON</h1>
+                    </div>
+                    <div class="column">
+                    <h1>TUE</h1>
+                    </div>
+                    <div class="column">
+                    <h1>WED</h1>
+                    </div>
+                    <div class="column">
+                    <h1>TH</h1>
+                    </div>
+                    <div class="column">
+                    <h1>FRI</h1>
+                    </div>
+                    <div class="column">
+                    <h1>SAT</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="days-grid"> 
+                <!-- row start -->
+                <div class="row">
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                </div>
+                <!-- row break -->
+                <div class="row">
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                </div>
+                <!-- row break -->
+                <div class="row">
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                </div>
+                <!-- row break -->
+                <div class="row">
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    <div class="column">
+                        <h2></h2>
+                        <p>Some text</p>
+                    </div>
+                    </div>
+                    <!-- row break -->
+                <div class="row">
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                </div>
+                <!-- row break -->
+                <div class="row">
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                <div class="column">
+                    <h2></h2>
+                    <p>Some text</p>
+                </div>
+                </div>
+                <!-- row end -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

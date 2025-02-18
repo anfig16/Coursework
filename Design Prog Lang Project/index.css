@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background-color: FBFBFB;
+    color: #0d1b2a;
+    font-family: 'Georgia', serif; 
+}
+
+header {
+    font-size: 20px;
+    background-color: #C6E7FF;
+    text-align: center;
+    padding: 1em;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: #7EB2DD;
+    overflow: hidden;
+    text-align: center;
+
+    li { 
+        display: inline;
+        padding: 1em;
+    }
+    
+    li a:hover{ 
+        background-color:#c5d5ea;
+    }
+    
+    li a{ 
+        padding: 1em;
+        color: #0d1b2a;
+    }
+}
+/* ///////////////////////////////////////////// */
+
+.calendar-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 2px;
+    margin-left: 0;
+}
+
+.notes, .calendar-view {
+    flex: 1; /* Each will take equal space */
+    box-sizing: border-box;
+}
+
+.calendar-view {
+    max-width: 85%; 
+    .calendar-header {
+        text-align: center;
+    }
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.notes {
+    max-width: 15%;
+    padding-left: 30px;
+    padding-right: 20px;
+    .input {
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+.calendar-weekdays {
+    .column {
+        display: inline-block;
+        height: 90px;
+        width: 170px; 
+    }
+}
+    
+.days-grid {
+   .column {
+        display: inline-block;
+        height: 90px;
+        width: 170px; 
+        box-sizing: border-box; 
+        border: 1px solid gray;
+        overflow: hidden;
+        position: relative;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 20%;
+        }
+        
+    }
+    .row {
+        height: 90px;
+    }
+}
+
+p {
+    text-align: left;
+}
+
+.days-grid .column p {
+    overflow-y: auto; /*Scrollbar for events */
+    height: 70%; /*Fit events within the column */
+    box-sizing: border-box;
+    margin-top: 7%;
+    padding: 0;
+
+    button {
+        margin-bottom: 3%;
+    }
+    
+}
+
+/*Pop-up styling*/
+.popup-overlay {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.popup button:hover {
+    background-color: #96b1ce;
+}
